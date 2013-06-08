@@ -1,0 +1,7 @@
+(global-set-key "\C-h" 'delete-backward-char)
+(set-default-coding-systems 'utf-8)
+(set-buffer-file-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(set-terminal-coding-system 'utf-8)
+(set-file-name-coding-system 'utf-8)
+(set-language-environment "Japanese")
