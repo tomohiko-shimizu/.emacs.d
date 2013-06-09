@@ -5,4 +5,10 @@
 (prefer-coding-system 'utf-8)
 (set-default-coding-systems 'utf-8)
 (when (eq system-type 'windows-nt)
-  (setq default-file-name-coding-system 'shift_jis))
+  (setq default-file-name-coding-system 'shift_jis)
+  (require 'server)
+  (server-start)
+  (remove-hook 'kill-buffer-query-functions 'server-kill-buffer-query-function))
+;;;行番号を表示
+(require 'linum)
+(global-linum-mode t) 
