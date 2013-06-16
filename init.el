@@ -1,3 +1,4 @@
+(add-to-list 'load-path "~/.emacs.d/")
 (global-set-key "\C-h" 'delete-backward-char)
 (set-keyboard-coding-system 'utf-8)
 (set-buffer-file-coding-system 'utf-8)
@@ -11,4 +12,6 @@
   (remove-hook 'kill-buffer-query-functions 'server-kill-buffer-query-function))
 ;;;行番号を表示
 (require 'linum)
-(global-linum-mode t) 
+(require 'php-mode)
+
+
