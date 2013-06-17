@@ -1,4 +1,5 @@
 (add-to-list 'load-path "~/.emacs.d/")
+(set-language-environment "Japanese")
 (global-set-key "\C-h" 'delete-backward-char)
 (set-keyboard-coding-system 'utf-8-unix)
 (set-buffer-file-coding-system 'utf-8-unix)
