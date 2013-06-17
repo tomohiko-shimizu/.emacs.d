@@ -13,5 +13,6 @@
 ;;;行番号を表示
 (require 'linum)
 (require 'php-mode)
-
+(global-whitespace-mode 1)
+(setq-default indent-tabs-mode nil)
 
