@@ -54,3 +54,9 @@
 (global-whitespace-mode 1)
 (setq-default indent-tabs-mode nil)
 
+(setq php-mode-force-pear t)
+(add-hook 'php-mode-hook
+          (lambda ()
+            (setq tab-width 4)
+            (setq c-basic-offset 4)
+            (setq indent-tabs-mode nil)))
